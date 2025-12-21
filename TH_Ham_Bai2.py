@@ -1,10 +1,19 @@
-def laNguyenTo(n):
-    kq = True
-    if n == 1 or n ==2:
-        kq = True
+def soLonNhat(a, b, c):
+    if a >= b and a>= c:
+        return a
+    elif b >= a and b >= c:
+        return b
     else:
-        for i in range(2, n):
-            if n % i == 0: 
-                kq = False
-                break
-    return kq
+        return c
+    
+def soBeNhat(a, b, c):
+    if a <= b and a<= c:
+        return a
+    elif b <= a and b <= c:
+        return b
+    else:
+        return c
+so_lon = soLonNhat(10, 5, 8)
+so_be = soBeNhat(10, 5, 8)
+print(f'Số lớn nhất là: {so_lon}')
+print(f'Số bé nhất là: {so_be}')
