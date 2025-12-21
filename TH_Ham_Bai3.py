@@ -1,6 +1,10 @@
-def CtoF(doC):
-    doF  = (9/5) * doC + 32
-    return doF
-doC = 37
-doF = CtoF(doC)
-print(f'{doC} độ C = {doF:.2f} độ F')
+def laNguyenTo(n):
+    kq = True
+    if n == 1 or n ==2:
+        kq = True
+    else:
+        for i in range(2, n):
+            if n % i == 0: 
+                kq = False
+                break
+    return kq
